@@ -283,8 +283,8 @@
             
             </div>
 
-            <!-- MAIN CONTENT GRID -->
-            <main class="px-5 pt-6 pb-8 lg:px-12 lg:py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <!-- MAIN CONTENT GRID (SECTION 1: PRODUCT + COPY) -->
+            <main class="px-5 pt-6 pb-2 lg:px-12 lg:py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                 
                 <!-- LEFT COLUMN (Product Gallery) -->
                 <div class="lg:col-span-5 lg:sticky lg:top-48">
@@ -318,11 +318,11 @@
                     </div>
                 </div>
 
-                <!-- RIGHT COLUMN (Sales Copy) -->
-                <div class="lg:col-span-7 flex flex-col justify-center">
+                <!-- RIGHT COLUMN (Sales Copy - Centered on Mobile, Left on Desktop) -->
+                <div class="lg:col-span-7 flex flex-col justify-center text-center lg:text-left">
                     
                     <!-- Star Rating -->
-                    <div class="flex items-center mb-2">
+                    <div class="flex items-center justify-center lg:justify-start mb-2">
                         <div class="flex text-brand-orange text-lg gap-0.5">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
@@ -330,23 +330,23 @@
                     </div>
 
                     <!-- Headline (Reduced size for better alignment) -->
-                    <h1 class="text-3xl lg:text-4xl font-black leading-tight text-brand-black mb-3 text-left">
+                    <h1 class="text-3xl lg:text-4xl font-black leading-tight text-brand-black mb-3">
                         You’re Doing Everything Right — So Why Is the Scale Ignoring You?
                     </h1>
 
                     <!-- Subheadline / Pain Points -->
-                    <div class="text-lg text-gray-500 font-medium leading-snug mb-5 text-left space-y-2">
+                    <div class="text-lg text-gray-500 font-medium leading-snug mb-5 space-y-2">
                         <p>You eat less. You move more. Yet your weight refuses to change.</p>
                         <p class="text-brand-black font-bold">This isn’t laziness. It’s a slower metabolism that no longer responds the way it used to.</p>
                     </div>
 
                      <!-- Bridge Statement -->
-                    <p class="text-base text-gray-600 mb-6 leading-relaxed bg-orange-50 p-3 rounded-lg border-l-4 border-brand-orange">
+                    <p class="text-base text-gray-600 mb-6 leading-relaxed bg-orange-50 p-3 rounded-lg border-l-4 border-brand-orange text-left lg:text-left">
                         GLPura supports metabolic function, appetite balance, and daily energy — helping your body stop resisting progress.
                     </p>
 
                     <!-- Benefits List (Tighter spacing) -->
-                    <ul class="space-y-3 lg:space-y-2 mb-6">
+                    <ul class="space-y-3 lg:space-y-2 mb-6 text-left mx-auto lg:mx-0 inline-block lg:block">
                         <li class="flex items-start gap-3">
                             <div class="mt-0.5 flex-shrink-0"><i class="fas fa-check text-xl check-orange"></i></div>
                             <span class="text-gray-600 text-base lg:text-[16px] leading-snug"><strong>No extreme diets • No harsh stimulants • No quick-fix promises</strong></span>
@@ -372,168 +372,101 @@
                     <!-- Closing Statement -->
                     <p class="text-base lg:text-lg font-bold text-brand-black mb-4">Support your metabolism. Stop starting over.</p>
 
-                    <!-- CTA Section (Dual Options) -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-    
-                        <!-- OPTION 1 (Green - Recommended) -->
-                        <div class="border-2 border-green-500 rounded-xl overflow-hidden shadow-lg flex flex-col relative bg-white transform transition hover:-translate-y-1 duration-300">
-                            <!-- Badge -->
-                            <div class="bg-green-600 text-white text-center py-1.5 text-xs font-extrabold uppercase tracking-wider flex items-center justify-center gap-2">
-                                <i class="fas fa-check-circle"></i> OPTION 1 — RECOMMENDED
-                            </div>
-                            
-                            <div class="p-4 lg:p-5 flex-1 flex flex-col">
-                                <h3 class="text-lg lg:text-xl font-black text-gray-900 leading-tight mb-1">GO DIRECTLY TO THE DISCOUNT OFFER</h3>
-                                <p class="text-green-600 font-bold text-base lg:text-lg mb-3">Save up to 48% today</p>
-                                <p class="text-xs text-gray-500 font-bold underline mb-4 cursor-pointer" onclick="goToDTC()">Go straight to secure checkout &rarr;</p>
-                                
-                                <p class="text-xs lg:text-sm text-gray-700 mb-4 leading-snug">Ideal for people who already know they need metabolic support and don’t want to lose today’s limited-time discount.</p>
-                                
-                                <div class="bg-green-50 p-3 rounded-lg mb-4 border border-green-100">
-                                    <p class="text-[10px] lg:text-xs font-bold text-green-800 mb-2 uppercase tracking-wide">If you’re tired of:</p>
-                                    <ul class="text-[10px] lg:text-xs text-gray-600 space-y-1 list-disc pl-4">
-                                        <li>Eating less with no results</li>
-                                        <li>Constant hunger and cravings</li>
-                                        <li>Low energy and slow progress</li>
-                                    </ul>
-                                </div>
-
-                                <p class="text-xs text-gray-500 mb-2">This option lets you lock in the best value immediately.</p>
-                                
-                                <ul class="text-[10px] lg:text-xs text-gray-500 space-y-1.5 mb-4">
-                                    <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Discount applied automatically at checkout</li>
-                                    <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Save up to 48% — limited-time offer</li>
-                                    <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Secure & encrypted checkout</li>
-                                    <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Free shipping included</li>
-                                    <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> 30-Day Money-Back Guarantee</li>
-                                    <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Limited stock due to high demand</li>
-                                </ul>
-
-                                <div class="mt-auto">
-                                     <div class="text-[9px] text-red-500 font-bold mb-2 text-center bg-red-50 rounded p-1 border border-red-100">
-                                        <i class="fas fa-exclamation-triangle"></i> NOTICE: This promotional discount may end at any time.
-                                    </div>
-                                    <button onclick="goToDTC()" class="w-full bg-green-600 text-white text-xs lg:text-sm font-bold py-3 px-2 rounded-lg shadow hover:bg-green-700 transition transform active:scale-95 uppercase leading-tight">
-                                        YES, I WANT TO SECURE MY 48% DISCOUNT
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- OPTION 2 (Blue) -->
-                        <div class="border border-blue-200 rounded-xl overflow-hidden shadow-sm flex flex-col bg-white hover:shadow-md transition duration-300">
-                             <!-- Badge -->
-                            <div class="bg-blue-600 text-white text-center py-1.5 text-xs font-bold uppercase tracking-wider">
-                                OPTION 2
-                            </div>
-
-                            <div class="p-4 lg:p-5 flex-1 flex flex-col">
-                                <h3 class="text-base lg:text-lg font-black text-gray-900 leading-tight mb-1">HELP ME CHOOSE THE RIGHT GLPURA PLAN</h3>
-                                <p class="text-blue-600 font-bold text-xs lg:text-sm mb-3">See how GLPura works, what to expect, and which package fits you best.</p>
-
-                                <p class="text-xs lg:text-sm text-gray-700 mb-4 leading-snug">Prefer to understand everything before making a decision? Answer a few quick questions to get personalized guidance.</p>
-
-                                <div class="bg-blue-50 p-3 rounded-lg mb-4 border border-blue-100">
-                                    <p class="text-[10px] lg:text-xs font-bold text-blue-800 mb-2 uppercase tracking-wide">Ideal if you want to:</p>
-                                    <ul class="text-[10px] lg:text-xs text-gray-600 space-y-1 list-disc pl-4">
-                                        <li>Understand why your metabolism feels slower</li>
-                                        <li>Learn how GLPura supports appetite and energy</li>
-                                        <li>See real customer experiences</li>
-                                        <li>Choose the right supply length for consistent results</li>
-                                    </ul>
-                                </div>
-                                
-                                <ul class="text-[10px] lg:text-xs text-gray-500 space-y-1.5 mb-4">
-                                    <li class="flex items-start gap-2"><i class="fas fa-info-circle text-blue-500 mt-0.5"></i> How GLPura supports metabolism</li>
-                                    <li class="flex items-start gap-2"><i class="fas fa-info-circle text-blue-500 mt-0.5"></i> Appetite & craving support explained</li>
-                                    <li class="flex items-start gap-2"><i class="fas fa-info-circle text-blue-500 mt-0.5"></i> Ingredient transparency & safety standards</li>
-                                    <li class="flex items-start gap-2"><i class="fas fa-info-circle text-blue-500 mt-0.5"></i> Real customer reviews</li>
-                                    <li class="flex items-start gap-2"><i class="fas fa-info-circle text-blue-500 mt-0.5"></i> Package comparison (30 / 60 / 90 days)</li>
-                                    <li class="flex items-start gap-2"><i class="fas fa-info-circle text-blue-500 mt-0.5"></i> 30-Day Money-Back Guarantee</li>
-                                    <li class="flex items-start gap-2"><i class="fas fa-info-circle text-blue-500 mt-0.5"></i> Frequently Asked Questions (FAQ)</li>
-                                </ul>
-
-                                <div class="mt-auto">
-                                    <button onclick="goToQuiz()" class="w-full bg-blue-600 text-white text-xs lg:text-sm font-bold py-3 px-2 rounded-lg shadow hover:bg-blue-700 transition transform active:scale-95 uppercase leading-tight">
-                                        FIND THE BEST GLPURA PLAN FOR ME
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
                 </div>
             </main>
 
-            <!-- REGION SELECTOR (Target URL Implemented Here) -->
-            <section id="region-selector" class="bg-brand-cream py-10 px-5 border-t border-gray-200 scroll-mt-36">
-                <div class="text-center mb-8">
-                    <h2 class="text-2xl md:text-3xl font-black text-brand-black mb-2 tracking-tight">Check Availability in Your Region</h2>
-                    <p class="text-sm text-gray-500 font-medium">Select your shipping destination to unlock exclusive inventory.</p>
-                </div>
+            <!-- SECTION 2: CALL TO ACTION BUTTONS (Stacked on Mobile, Side-by-Side on Desktop) -->
+            <section id="cta-options" class="px-5 pb-12 lg:px-12">
+                
+                <!-- CTA Section (Dual Options) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 max-w-5xl mx-auto">
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 max-w-4xl mx-auto mb-8">
-                    
-                    <!-- 1. United States -->
-                    <button onclick="goToOffer('https://www.fasttrack37.com/PM7HK3TH/2RC2XPBN/?uid=48660')" class="bg-white p-4 rounded-xl border border-gray-200 shadow-md hover:shadow-xl hover:border-brand-orange hover:-translate-y-1 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
-                        <div class="relative shrink-0 shadow-sm rounded overflow-hidden">
-                            <img src="https://flagcdn.com/w160/us.png" class="w-16 h-auto object-cover" alt="USA">
+                    <!-- OPTION 1 (Green - Recommended) -->
+                    <div class="border-2 border-green-500 rounded-xl overflow-hidden shadow-lg flex flex-col relative bg-white transform transition hover:-translate-y-1 duration-300">
+                        <!-- Badge -->
+                        <div class="bg-green-600 text-white text-center py-1.5 text-xs font-extrabold uppercase tracking-wider flex items-center justify-center gap-2">
+                            <i class="fas fa-check-circle"></i> OPTION 1 — RECOMMENDED
                         </div>
-                        <div>
-                            <span class="block text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-orange">United States</span>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-red-50 text-red-600 border border-red-100 uppercase tracking-wide">
-                                <span class="w-1.5 h-1.5 rounded-full bg-red-500 mr-1.5 animate-pulse"></span> Low Stock
-                            </span>
-                        </div>
-                    </button>
+                        
+                        <div class="p-4 lg:p-5 flex-1 flex flex-col">
+                            <h3 class="text-lg lg:text-xl font-black text-gray-900 leading-tight mb-1">GO DIRECTLY TO THE DISCOUNT OFFER</h3>
+                            <p class="text-green-600 font-bold text-base lg:text-lg mb-3">Save up to 48% today</p>
+                            <p class="text-xs text-gray-500 font-bold underline mb-4 cursor-pointer" onclick="goToDTC()">Go straight to secure checkout &rarr;</p>
+                            
+                            <p class="text-xs lg:text-sm text-gray-700 mb-4 leading-snug">Ideal for people who already know they need metabolic support and don’t want to lose today’s limited-time discount.</p>
+                            
+                            <div class="bg-green-50 p-3 rounded-lg mb-4 border border-green-100">
+                                <p class="text-[10px] lg:text-xs font-bold text-green-800 mb-2 uppercase tracking-wide">If you’re tired of:</p>
+                                <ul class="text-[10px] lg:text-xs text-gray-600 space-y-1 list-disc pl-4">
+                                    <li>Eating less with no results</li>
+                                    <li>Constant hunger and cravings</li>
+                                    <li>Low energy and slow progress</li>
+                                </ul>
+                            </div>
 
-                    <!-- 2. United Kingdom -->
-                    <button onclick="goToOffer('https://www.fasttrack37.com/PM7HK3TH/2RC5PGRW/?uid=48666')" class="bg-white p-4 rounded-xl border border-gray-200 shadow-md hover:shadow-xl hover:border-brand-orange hover:-translate-y-1 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
-                         <div class="relative shrink-0 shadow-sm rounded overflow-hidden">
-                            <img src="https://flagcdn.com/w160/gb.png" class="w-16 h-auto object-cover" alt="UK">
-                        </div>
-                        <div>
-                            <span class="block text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-orange">United Kingdom</span>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-green-50 text-green-700 border border-green-100 uppercase tracking-wide">
-                                <span class="w-1.5 h-1.5 rounded-full bg-green-500 mr-1.5"></span> Available
-                            </span>
-                        </div>
-                    </button>
+                            <p class="text-xs text-gray-500 mb-2">This option lets you lock in the best value immediately.</p>
+                            
+                            <ul class="text-[10px] lg:text-xs text-gray-500 space-y-1.5 mb-4">
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Discount applied automatically at checkout</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Save up to 48% — limited-time offer</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Secure & encrypted checkout</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Free shipping included</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> 30-Day Money-Back Guarantee</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Limited stock due to high demand</li>
+                            </ul>
 
-                    <!-- 3. Australia -->
-                    <button onclick="goToOffer('https://www.fasttrack37.com/PM7HK3TH/2RC74CJH/?uid=48669')" class="bg-white p-4 rounded-xl border border-gray-200 shadow-md hover:shadow-xl hover:border-brand-orange hover:-translate-y-1 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
-                        <div class="relative shrink-0 shadow-sm rounded overflow-hidden">
-                            <img src="https://flagcdn.com/w160/au.png" class="w-16 h-auto object-cover" alt="Australia">
+                            <div class="mt-auto">
+                                    <div class="text-[9px] text-red-500 font-bold mb-2 text-center bg-red-50 rounded p-1 border border-red-100">
+                                    <i class="fas fa-exclamation-triangle"></i> NOTICE: This promotional discount may end at any time.
+                                </div>
+                                <button onclick="goToDTC()" class="w-full bg-green-600 text-white text-xs lg:text-sm font-bold py-3 px-2 rounded-lg shadow hover:bg-green-700 transition transform active:scale-95 uppercase leading-tight">
+                                    YES, I WANT TO SECURE MY 48% DISCOUNT
+                                </button>
+                            </div>
                         </div>
-                        <div>
-                            <span class="block text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-orange">Australia</span>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-green-50 text-green-700 border border-green-100 uppercase tracking-wide">
-                                <span class="w-1.5 h-1.5 rounded-full bg-green-500 mr-1.5"></span> Available
-                            </span>
-                        </div>
-                    </button>
+                    </div>
 
-                    <!-- 4. New Zealand -->
-                    <button onclick="goToOffer('https://www.fasttrack37.com/PM7HK3TH/2RC4BL39/?uid=48663')" class="bg-white p-4 rounded-xl border border-gray-200 shadow-md hover:shadow-xl hover:border-brand-orange hover:-translate-y-1 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
-                        <div class="relative shrink-0 shadow-sm rounded overflow-hidden">
-                            <img src="https://flagcdn.com/w160/nz.png" class="w-16 h-auto object-cover" alt="New Zealand">
+                    <!-- OPTION 2 (Blue) -->
+                    <div class="border border-blue-200 rounded-xl overflow-hidden shadow-sm flex flex-col bg-white hover:shadow-md transition duration-300">
+                            <!-- Badge -->
+                        <div class="bg-blue-600 text-white text-center py-1.5 text-xs font-bold uppercase tracking-wider">
+                            OPTION 2
                         </div>
-                        <div>
-                            <span class="block text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-orange">New Zealand</span>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-green-50 text-green-700 border border-green-100 uppercase tracking-wide">
-                                <span class="w-1.5 h-1.5 rounded-full bg-green-500 mr-1.5"></span> Available
-                            </span>
+
+                        <div class="p-4 lg:p-5 flex-1 flex flex-col">
+                            <h3 class="text-base lg:text-lg font-black text-gray-900 leading-tight mb-1">HELP ME CHOOSE THE RIGHT GLPURA PLAN</h3>
+                            <p class="text-blue-600 font-bold text-xs lg:text-sm mb-3">See how GLPura works, what to expect, and which package fits you best.</p>
+
+                            <p class="text-xs lg:text-sm text-gray-700 mb-4 leading-snug">Prefer to understand everything before making a decision? Answer a few quick questions to get personalized guidance.</p>
+
+                            <div class="bg-blue-50 p-3 rounded-lg mb-4 border border-blue-100">
+                                <p class="text-[10px] lg:text-xs font-bold text-blue-800 mb-2 uppercase tracking-wide">Ideal if you want to:</p>
+                                <ul class="text-[10px] lg:text-xs text-gray-600 space-y-1 list-disc pl-4">
+                                    <li>Understand why your metabolism feels slower</li>
+                                    <li>Learn how GLPura supports appetite and energy</li>
+                                    <li>See real customer experiences</li>
+                                    <li>Choose the right supply length for consistent results</li>
+                                </ul>
+                            </div>
+                            
+                            <ul class="text-[10px] lg:text-xs text-gray-500 space-y-1.5 mb-4">
+                                <li class="flex items-start gap-2"><i class="fas fa-info-circle text-blue-500 mt-0.5"></i> How GLPura supports metabolism</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-info-circle text-blue-500 mt-0.5"></i> Appetite & craving support explained</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-info-circle text-blue-500 mt-0.5"></i> Ingredient transparency & safety standards</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-info-circle text-blue-500 mt-0.5"></i> Real customer reviews</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-info-circle text-blue-500 mt-0.5"></i> Package comparison (30 / 60 / 90 days)</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-info-circle text-blue-500 mt-0.5"></i> 30-Day Money-Back Guarantee</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-info-circle text-blue-500 mt-0.5"></i> Frequently Asked Questions (FAQ)</li>
+                            </ul>
+
+                            <div class="mt-auto">
+                                <button onclick="goToQuiz()" class="w-full bg-blue-600 text-white text-xs lg:text-sm font-bold py-3 px-2 rounded-lg shadow hover:bg-blue-700 transition transform active:scale-95 uppercase leading-tight">
+                                    FIND THE BEST GLPURA PLAN FOR ME
+                                </button>
+                            </div>
                         </div>
-                    </button>
+                    </div>
 
-                </div>
-
-                <!-- Secondary Option Below Countries -->
-                <div class="text-center">
-                    <button onclick="goToInfo()" class="text-gray-500 font-medium text-sm hover:text-brand-orange underline decoration-dotted underline-offset-4 transition">
-                        Not ready to buy? Read full product details here.
-                    </button>
                 </div>
             </section>
 
@@ -628,7 +561,7 @@
         
         // Scroll to region selector
         function scrollToSelector() {
-            const selector = document.getElementById('region-selector');
+            const selector = document.getElementById('cta-options');
             if(selector) {
                 selector.scrollIntoView({ behavior: 'smooth' });
             }
