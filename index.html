@@ -511,7 +511,7 @@
 
                     <!-- Copyright com Logo -->
                     <div class="flex items-center justify-center gap-2 mb-2 opacity-50 hover:opacity-100 transition-opacity">
-                        <img src="images/faviconV2.png" alt="GLPura Icon" class="h-4 w-4 grayscale invert brightness-0">
+                        <img src="images/logo.svg" alt="GLPura Icon" class="h-6 w-auto invert brightness-0 grayscale">
                         <span class="text-xs text-white font-normal">© 2026 GLPura Authorized Distributor. All rights reserved.</span>
                     </div>
                     
@@ -548,14 +548,40 @@
 
     </div>
 
-    <!-- Google Translate Script -->
+    <!-- Google Translate Script (Auto-Trigger Logic) -->
     <script type="text/javascript">
+        // 1. Auto-detect language and set cookie BEFORE Google Translate loads
+        (function() {
+            var lang = navigator.language || navigator.userLanguage; 
+            var targetLang = 'en'; // Default fallback
+            
+            // Normalize to 2 char code generally
+            var langCode = lang.substring(0, 2).toLowerCase();
+
+            // Match supported regions
+            if (langCode === 'de') targetLang = 'de';
+            else if (langCode === 'fr') targetLang = 'fr';
+            else if (langCode === 'sv') targetLang = 'sv';
+            else if (langCode === 'da') targetLang = 'da';
+            else if (langCode === 'fi') targetLang = 'fi';
+            else if (langCode === 'nl') targetLang = 'nl'; // For BE/NL
+            
+            // If target is different from English and cookie NOT set yet, force it.
+            // Using a session cookie (expires=0) so user can change it later if they want.
+            if (targetLang !== 'en' && document.cookie.indexOf('googtrans') === -1) {
+                var cookieValue = "/en/" + targetLang;
+                document.cookie = "googtrans=" + cookieValue + "; path=/";
+                document.cookie = "googtrans=" + cookieValue + "; path=/; domain=" + document.location.hostname;
+            }
+        })();
+
+        // 2. Initialize Google Translate
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
                 pageLanguage: 'en',
                 includedLanguages: 'en,de,fr,da,sv,fi,nl',
                 layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false
+                autoDisplay: false // We handle display via cookie, this hides top banner
             }, 'google_translate_element');
         }
     </script>
@@ -565,7 +591,7 @@
         // ==========================================
         // CONFIGURATION
         // ==========================================
-        // Links are now hardcoded in HTML as requested
+        // Links are hardcoded in HTML for performance
         
         // ==========================================
         // 1. NAVIGATION & ACTIONS
